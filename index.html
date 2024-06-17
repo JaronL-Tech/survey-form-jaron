@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html>
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title>Survey Form<title>
 </head>
 <body>
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Please fill out this form.</p>
-  <form></form>
+  <h1 id="title"> <title>Survery-Form</title ></h1>
+  <p id="description"><description>Please fill this out.</description></p>
+  <form id="survey-form" method="POST">
+  <fieldset>
+            <label id="name-label" for="name">Enter your name</label>
+            <input id="name" type="text" placeholder="John doe" required>
+            
+            <label id="email-label" for="email">Enter your Email</label>
+            <input id="email" type="email" placeholder="Johndoe00@gmail.com" required>
+            
+            <label id="number-label" for="number">Enter your number</label>
+            <input id="number" type="number" min="0" max="150" placeholder="11" required>
+        </fieldset> 
+        <fieldset>
+         <legend>Account type (required)</legend>
+    <label for="personal-account"><input id="personal-account" c type="radio" name="account-type" value="personal-account" /> Personal</label>
+    <label for="business-account"><input id="business-account" type="radio" value="business-account"name="account-type" /> Business</label>
+        </fieldset>
+        <select id="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">Apple</option>
+          <option value="2">Code Geass</option>
+        </select>
+        <textarea></textarea>
+        <input type="Submit">
+</form>
 </body>
+</hmtl>
