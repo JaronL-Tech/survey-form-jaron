@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+   <h1 id="title" value="survey-form"> survey-form</h1>
 </head>
 <body>
-  <h1 id="title"> <title>Survery-Form</title ></h1>
+  <h1 id="title" name="survey-form"> <title>survey-form</title ></h1>
   <p id="description"><description>Please fill this out.</description></p>
   <form id="survey-form" method="POST">
   <fieldset>
@@ -20,8 +21,17 @@
         </fieldset> 
         <fieldset>
          <legend>Account type (required)</legend>
-    <label for="personal-account"><input id="personal-account" c type="radio" name="account-type" value="personal-account" /> Personal</label>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" value="personal-account"  /> Personal</label>
     <label for="business-account"><input id="business-account" type="radio" value="business-account"name="account-type" /> Business</label>
+        </fieldset>
+         <fieldset>
+            <legend>Choose your preferences (required)</legend>
+            <label for="subscribe-newsletter">
+                <input id="subscribe-newsletter" type="checkbox" name="preferences" value="newsletter"> Subscribe to newsletter
+            </label>
+            <label for="receive-updates">
+                <input id="receive-updates" type="checkbox" name="preferences" value="updates"> Receive updates
+            </label>
         </fieldset>
         <select id="dropdown">
           <option value="">(Select one)</option>
@@ -29,7 +39,7 @@
           <option value="2">Code Geass</option>
         </select>
         <textarea></textarea>
-        <input type="Submit">
+        <button id="submit" type="submit">Sumbit</button>
 </form>
 </body>
 </hmtl>
